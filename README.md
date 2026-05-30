@@ -1,381 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Mahitha Gatreddi | Developer Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet"/>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --purple:#a855f7;--purple-dark:#7c3aed;--cyan:#06b6d4;--pink:#f472b6;
-  --bg:#0d0d1a;--bg2:#111128;--bg3:#16163a;--card:#1a1a35;
-  --text:#e2e8f0;--muted:#94a3b8;--border:rgba(168,85,247,0.2);
-}
-html{scroll-behavior:smooth}
-body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;min-height:100vh}
+<div align="center">
 
-/* CANVAS BG */
-#canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:a855f7,100:06b6d4&height=180&section=header&text=Hi!%20I'm%20Mahitha%20Gatreddi%20%F0%9F%91%8B&fontSize=34&fontColor=ffffff&fontAlignY=45&animation=fadeIn" />
 
-/* NOISE OVERLAY */
-body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");opacity:.4;z-index:1;pointer-events:none}
+<br/>
 
-/* LAYOUT */
-.wrap{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:0 24px 80px}
+<img src="https://komarev.com/ghpvc/?username=Mahithagatreddi&label=Profile+Views&color=7c3aed&style=for-the-badge" />
+&nbsp;
+<img src="https://img.shields.io/github/followers/Mahithagatreddi?label=Followers&style=for-the-badge&color=06b6d4&labelColor=0d1117" />
 
-/* NAV */
-nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'Fira Code',monospace;font-size:18px;font-weight:600;background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.nav-links{display:flex;gap:28px}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
-.nav-links a:hover{color:var(--purple)}
+<br/><br/>
 
-/* HERO */
-.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:80px 0 60px;gap:20px}
-.avatar-wrap{position:relative;width:120px;height:120px;margin-bottom:8px}
-.avatar-ring{position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(var(--purple),var(--cyan),var(--pink),var(--purple));animation:spin 4s linear infinite}
-.avatar-inner{position:absolute;inset:3px;border-radius:50%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:700;color:#fff;font-family:'Fira Code',monospace}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-.hero-name{font-size:clamp(36px,6vw,60px);font-weight:700;line-height:1.1;background:linear-gradient(135deg,#fff 30%,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-typed{font-family:'Fira Code',monospace;font-size:18px;color:var(--purple);min-height:28px}
-.cursor{display:inline-block;width:2px;height:18px;background:var(--purple);vertical-align:middle;margin-left:3px;animation:blink .7s step-end infinite}
-@keyframes blink{50%{opacity:0}}
-.hero-desc{max-width:520px;color:var(--muted);font-size:16px;line-height:1.7}
-.hero-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:4px}
-.badge{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.5px;border:1px solid;animation:fadeup .6s ease both}
-@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.badge-purple{background:rgba(168,85,247,.12);border-color:rgba(168,85,247,.4);color:#c4b5fd}
-.badge-cyan{background:rgba(6,182,212,.12);border-color:rgba(6,182,212,.4);color:#67e8f9}
-.badge-pink{background:rgba(244,114,182,.12);border-color:rgba(244,114,182,.4);color:#f9a8d4}
-.hero-cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
-.btn{padding:12px 28px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;transition:all .25s;cursor:pointer;border:none;display:inline-flex;align-items:center;gap:8px}
-.btn-primary{background:linear-gradient(135deg,var(--purple-dark),var(--purple));color:#fff}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(168,85,247,.35)}
-.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text)}
-.btn-outline:hover{border-color:var(--purple);background:rgba(168,85,247,.08);transform:translateY(-2px)}
-
-/* DIVIDER */
-.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:12px 0}
-
-/* SECTION */
-section{padding:60px 0 20px}
-.sec-header{display:flex;align-items:center;gap:14px;margin-bottom:32px}
-.sec-num{font-family:'Fira Code',monospace;font-size:13px;color:var(--purple);font-weight:500}
-.sec-title{font-size:28px;font-weight:700;color:#fff}
-.sec-line{flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
-
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.about-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;transition:border-color .3s,transform .3s}
-.about-card:hover{border-color:var(--purple);transform:translateY(-3px)}
-.about-card .label{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;margin-bottom:8px}
-.about-card p{font-size:14px;color:var(--muted);line-height:1.6}
-.code-block{background:#0a0a1a;border:1px solid var(--border);border-radius:14px;padding:24px;font-family:'Fira Code',monospace;font-size:13px;line-height:1.9;color:#e2e8f0;overflow-x:auto;margin-bottom:16px}
-.code-kw{color:#c084fc}.code-str{color:#86efac}.code-key{color:#67e8f9}.code-val{color:#fde68a}.code-cm{color:#475569}
-
-/* SKILLS */
-.skills-group{margin-bottom:24px}
-.skills-label{font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-.skills-row{display:flex;flex-wrap:wrap;gap:10px}
-.skill-chip{display:flex;align-items:center;gap:8px;padding:8px 16px;border-radius:10px;font-size:13px;font-weight:600;border:1px solid;transition:all .25s;cursor:default}
-.skill-chip:hover{transform:translateY(-2px)}
-.sk-c{background:rgba(0,89,156,.12);border-color:rgba(0,89,156,.4);color:#93c5fd}
-.sk-java{background:rgba(237,139,0,.12);border-color:rgba(237,139,0,.4);color:#fcd34d}
-.sk-py{background:rgba(55,118,187,.12);border-color:rgba(55,118,187,.4);color:#bfdbfe}
-.sk-html{background:rgba(227,79,38,.12);border-color:rgba(227,79,38,.4);color:#fca5a5}
-.sk-css{background:rgba(21,114,182,.12);border-color:rgba(21,114,182,.4);color:#a5f3fc}
-.sk-js{background:rgba(247,223,30,.12);border-color:rgba(247,223,30,.4);color:#fef08a}
-.sk-git{background:rgba(240,80,50,.12);border-color:rgba(240,80,50,.4);color:#fca5a5}
-.sk-vs{background:rgba(0,122,204,.12);border-color:rgba(0,122,204,.4);color:#93c5fd}
-.sk-gh{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#d1d5db}
-
-/* PROGRESS */
-.progress-section{margin-top:32px}
-.prog-row{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-.prog-label{width:100px;font-size:13px;font-weight:500;color:var(--muted)}
-.prog-track{flex:1;height:6px;background:rgba(255,255,255,.06);border-radius:3px;overflow:hidden}
-.prog-fill{height:100%;border-radius:3px;transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.4,0,.2,1)}
-.prog-pct{width:36px;font-size:12px;color:var(--muted);text-align:right;font-family:'Fira Code',monospace}
-
-/* STATS GRID */
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
-.stat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 14px;text-align:center;transition:all .3s}
-.stat-card:hover{border-color:var(--purple);transform:translateY(-3px)}
-.stat-num{font-size:32px;font-weight:700;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-family:'Fira Code',monospace}
-.stat-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:4px}
-
-/* CONNECT */
-.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.connect-card{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 20px;text-decoration:none;color:var(--text);transition:all .3s}
-.connect-card:hover{border-color:var(--purple);transform:translateY(-3px);background:rgba(168,85,247,.08)}
-.connect-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.ci-li{background:rgba(0,119,181,.2)}
-.ci-gh{background:rgba(255,255,255,.08)}
-.ci-pt{background:rgba(168,85,247,.2)}
-.connect-info strong{font-size:14px;font-weight:600;display:block}
-.connect-info span{font-size:12px;color:var(--muted)}
-
-/* FOOTER */
-footer{text-align:center;padding:40px 0 20px;border-top:1px solid var(--border)}
-.footer-wave{font-family:'Fira Code',monospace;font-size:13px;color:var(--muted);margin-bottom:8px}
-.footer-name{font-size:14px;color:var(--muted)}
-.footer-name span{color:var(--purple)}
-
-/* SCROLL REVEAL */
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:none}
-
-/* GLOW ORBS */
-.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0;animation:orb-float 8s ease-in-out infinite}
-.orb1{width:400px;height:400px;background:rgba(124,58,237,.15);top:-100px;left:-100px;animation-delay:0s}
-.orb2{width:300px;height:300px;background:rgba(6,182,212,.1);bottom:10%;right:-80px;animation-delay:3s}
-.orb3{width:250px;height:250px;background:rgba(244,114,182,.08);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:5s}
-@keyframes orb-float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-30px) scale(1.05)}}
-
-/* SHIMMER TEXT */
-@keyframes shimmer{to{background-position:200% center}}
-.shimmer{background:linear-gradient(90deg,var(--purple),var(--cyan),var(--pink),var(--purple));background-size:200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3s linear infinite}
-
-@media(max-width:600px){
-  .about-grid,.stats-grid,.connect-grid{grid-template-columns:1fr}
-  .hero-name{font-size:32px}
-}
-</style>
-</head>
-<body>
-
-<canvas id="canvas"></canvas>
-<div class="orb orb1"></div>
-<div class="orb orb2"></div>
-<div class="orb orb3"></div>
-
-<div class="wrap">
-
-  <!-- NAV -->
-  <nav>
-    <div class="nav-logo">&lt;MG /&gt;</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#stats">Stats</a>
-      <a href="#connect">Connect</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="avatar-wrap">
-      <div class="avatar-ring"></div>
-      <div class="avatar-inner">MG</div>
-    </div>
-    <div class="hero-name">Mahitha Gatreddi</div>
-    <div class="hero-typed"><span id="typed"></span><span class="cursor"></span></div>
-    <p class="hero-desc">A passionate student building cool things with code — one project at a time. Open to collaborating, learning, and growing.</p>
-    <div class="hero-badges">
-      <span class="badge badge-purple" style="animation-delay:.1s">🚀 Student Developer</span>
-      <span class="badge badge-cyan" style="animation-delay:.2s">💻 Web Enthusiast</span>
-      <span class="badge badge-pink" style="animation-delay:.3s">🌱 Always Learning</span>
-      <span class="badge badge-purple" style="animation-delay:.4s">🇮🇳 India</span>
-    </div>
-    <div class="hero-cta">
-      <a href="https://mahithagatreddi.github.io/Portfolio/" target="_blank" class="btn btn-primary">✨ View Portfolio</a>
-      <a href="https://www.linkedin.com/in/mahitha-gatreddi-497347378" target="_blank" class="btn btn-outline">🔗 LinkedIn</a>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ABOUT -->
-  <section id="about" class="reveal">
-    <div class="sec-header">
-      <span class="sec-num">01.</span>
-      <h2 class="sec-title">About Me</h2>
-      <div class="sec-line"></div>
-    </div>
-    <div class="code-block">
-<span class="code-kw">class</span> <span class="code-key">Mahitha</span>:
-  name      <span class="code-kw">=</span> <span class="code-str">"Mahitha Gatreddi"</span>
-  role      <span class="code-kw">=</span> <span class="code-str">"Student &amp; Aspiring Developer"</span>
-  location  <span class="code-kw">=</span> <span class="code-str">"India 🇮🇳"</span>
-  stack     <span class="code-kw">=</span> [<span class="code-str">"C"</span>, <span class="code-str">"Java"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>, <span class="code-str">"JS"</span>]
-  learning  <span class="code-kw">=</span> <span class="code-str">"DSA &amp; Full Stack Web Dev"</span>
-  open_to   <span class="code-kw">=</span> <span class="code-str">"Collaborations &amp; Open Source"</span>
-  fun_fact  <span class="code-kw">=</span> <span class="code-str">"I debug with console.log 😄"</span>
-    </div>
-    <div class="about-grid">
-      <div class="about-card"><div class="label">Currently</div><p>Mastering DSA & Full Stack Web Development</p></div>
-      <div class="about-card"><div class="label">Goal</div><p>Build meaningful projects that solve real problems</p></div>
-      <div class="about-card"><div class="label">Fun Fact</div><p>Coffee + good music = best code sessions ☕🎵</p></div>
-      <div class="about-card"><div class="label">Status</div><p>Open to collaborations & open source contributions 🤝</p></div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="reveal">
-    <div class="sec-header">
-      <span class="sec-num">02.</span>
-      <h2 class="sec-title">Tech Stack</h2>
-      <div class="sec-line"></div>
-    </div>
-    <div class="skills-group">
-      <div class="skills-label">Languages</div>
-      <div class="skills-row">
-        <div class="skill-chip sk-c">⚙️ C</div>
-        <div class="skill-chip sk-java">☕ Java</div>
-        <div class="skill-chip sk-py">🐍 Python</div>
-      </div>
-    </div>
-    <div class="skills-group">
-      <div class="skills-label">Frontend</div>
-      <div class="skills-row">
-        <div class="skill-chip sk-html">🌐 HTML5</div>
-        <div class="skill-chip sk-css">🎨 CSS3</div>
-        <div class="skill-chip sk-js">⚡ JavaScript</div>
-      </div>
-    </div>
-    <div class="skills-group">
-      <div class="skills-label">Tools</div>
-      <div class="skills-row">
-        <div class="skill-chip sk-git">🔀 Git</div>
-        <div class="skill-chip sk-gh">🐙 GitHub</div>
-        <div class="skill-chip sk-vs">💙 VS Code</div>
-      </div>
-    </div>
-    <div class="progress-section">
-      <div class="skills-label">Proficiency</div>
-      <div class="prog-row"><div class="prog-label">Python</div><div class="prog-track"><div class="prog-fill" style="width:75%;background:linear-gradient(90deg,#3b82f6,#06b6d4)" data-width="75%"></div></div><div class="prog-pct">75%</div></div>
-      <div class="prog-row"><div class="prog-label">Web Dev</div><div class="prog-track"><div class="prog-fill" style="width:70%;background:linear-gradient(90deg,#a855f7,#f472b6)" data-width="70%"></div></div><div class="prog-pct">70%</div></div>
-      <div class="prog-row"><div class="prog-label">Java</div><div class="prog-track"><div class="prog-fill" style="width:65%;background:linear-gradient(90deg,#f59e0b,#ef4444)" data-width="65%"></div></div><div class="prog-pct">65%</div></div>
-      <div class="prog-row"><div class="prog-label">C</div><div class="prog-track"><div class="prog-fill" style="width:60%;background:linear-gradient(90deg,#8b5cf6,#06b6d4)" data-width="60%"></div></div><div class="prog-pct">60%</div></div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section id="stats" class="reveal">
-    <div class="sec-header">
-      <span class="sec-num">03.</span>
-      <h2 class="sec-title">GitHub Stats</h2>
-      <div class="sec-line"></div>
-    </div>
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num" data-target="124">0</div><div class="stat-lbl">Total Commits</div></div>
-      <div class="stat-card"><div class="stat-num" data-target="12">0</div><div class="stat-lbl">Repositories</div></div>
-      <div class="stat-card"><div class="stat-num" data-target="7">0</div><div class="stat-lbl">Day Streak</div></div>
-      <div class="stat-card"><div class="stat-num" data-target="3">0</div><div class="stat-lbl">Stars Earned</div></div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:16px;align-items:center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Mahithagatreddi&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&count_private=true" style="max-width:100%;border-radius:12px" loading="lazy" />
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mahithagatreddi&theme=tokyonight&hide_border=true&border_radius=12" style="max-width:100%;border-radius:12px" loading="lazy" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahithagatreddi&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" style="max-width:480px;width:100%;border-radius:12px" loading="lazy" />
-    </div>
-  </section>
-
-  <!-- CONNECT -->
-  <section id="connect" class="reveal">
-    <div class="sec-header">
-      <span class="sec-num">04.</span>
-      <h2 class="sec-title">Let's Connect</h2>
-      <div class="sec-line"></div>
-    </div>
-    <div class="connect-grid">
-      <a href="https://www.linkedin.com/in/mahitha-gatreddi-497347378" target="_blank" class="connect-card">
-        <div class="connect-icon ci-li">💼</div>
-        <div class="connect-info"><strong>LinkedIn</strong><span>Mahitha Gatreddi</span></div>
-      </a>
-      <a href="https://github.com/Mahithagatreddi" target="_blank" class="connect-card">
-        <div class="connect-icon ci-gh">🐙</div>
-        <div class="connect-info"><strong>GitHub</strong><span>@Mahithagatreddi</span></div>
-      </a>
-      <a href="https://mahithagatreddi.github.io/Portfolio/" target="_blank" class="connect-card" style="grid-column:1/-1">
-        <div class="connect-icon ci-pt">🌐</div>
-        <div class="connect-info"><strong>Portfolio Website</strong><span>mahithagatreddi.github.io/Portfolio</span></div>
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-wave">~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~</div>
-    <p class="footer-name">Made with ❤️ by <span>Mahitha Gatreddi</span> &nbsp;|&nbsp; Always building, always learning 🚀</p>
-  </footer>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Student+%7C+Developer+%7C+Creator+%F0%9F%9A%80;C+%7C+Java+%7C+Python+%7C+Web+Dev+%F0%9F%92%BB;Learning+Every+Single+Day+%F0%9F%8C%B1;Turning+Ideas+into+Reality+%E2%9C%A8" alt="Typing SVG" />
 
 </div>
 
-<script>
-// PARTICLE CANVAS
-const canvas=document.getElementById('canvas');
-const ctx=canvas.getContext('2d');
-let W,H,particles=[];
-function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}
-resize();window.addEventListener('resize',resize);
-const colors=['rgba(168,85,247,','rgba(6,182,212,','rgba(244,114,182,'];
-for(let i=0;i<90;i++){
-  particles.push({
-    x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,
-    r:Math.random()*1.8+.3,
-    vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,
-    c:colors[Math.floor(Math.random()*colors.length)],
-    o:Math.random()*.6+.1
-  })
-}
-function drawCanvas(){
-  ctx.clearRect(0,0,W,H);
-  particles.forEach(p=>{
-    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-    ctx.fillStyle=p.c+p.o+')';ctx.fill();
-    p.x+=p.vx;p.y+=p.vy;
-    if(p.x<0)p.x=W;if(p.x>W)p.x=0;
-    if(p.y<0)p.y=H;if(p.y>H)p.y=0;
-  });
-  // connect nearby
-  for(let i=0;i<particles.length;i++){
-    for(let j=i+1;j<particles.length;j++){
-      const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
-      const dist=Math.sqrt(dx*dx+dy*dy);
-      if(dist<100){
-        ctx.beginPath();
-        ctx.moveTo(particles[i].x,particles[i].y);
-        ctx.lineTo(particles[j].x,particles[j].y);
-        ctx.strokeStyle=`rgba(168,85,247,${(1-dist/100)*0.12})`;
-        ctx.lineWidth=.5;ctx.stroke();
-      }
-    }
-  }
-  requestAnimationFrame(drawCanvas);
-}
-drawCanvas();
+---
 
-// TYPING
-const phrases=['Student & Developer 💻','Web Dev Enthusiast 🌐','Python Learner 🐍','Open Source Explorer 🔍','Building cool things! 🚀'];
-let pi=0,ci=0,del=false;
-const el=document.getElementById('typed');
-function typeStep(){
-  const phrase=phrases[pi];
-  if(!del){el.textContent=phrase.slice(0,++ci);if(ci===phrase.length){del=true;setTimeout(typeStep,1800);return}}
-  else{el.textContent=phrase.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length}}
-  setTimeout(typeStep,del?40:85);
-}
-typeStep();
+## 🙋‍♀️ About Me
 
-// SCROLL REVEAL
-const revealEls=document.querySelectorAll('.reveal');
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');
-    // trigger progress bars
-    e.target.querySelectorAll('.prog-fill').forEach(b=>{b.style.transform='scaleX(1)'});
-    // trigger count-up
-    e.target.querySelectorAll('[data-target]').forEach(n=>{
-      const target=+n.dataset.target,step=Math.ceil(target/40);
-      let c=0;const iv=setInterval(()=>{c=Math.min(c+step,target);n.textContent=c;if(c>=target)clearInterval(iv)},35);
-    });
-  }});
-},{threshold:.15});
-revealEls.forEach(e=>observer.observe(e));
-</script>
-</body>
-</html>
+<img align="right" alt="Coding" width="320" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
+
+```python
+class Mahitha:
+    name     = "Mahitha Gatreddi"
+    role     = "Student & Aspiring Developer"
+    location = "India 🇮🇳"
+    stack    = ["C", "Java", "Python",
+                "HTML", "CSS", "JavaScript"]
+    learning = "DSA & Full Stack Web Dev"
+    open_to  = "Collaborations & Open Source"
+    fun_fact = "I debug with console.log 😄"
+```
+
+- 🔭 Building my **portfolio projects**
+- 🌱 Mastering **Data Structures & Algorithms**
+- 💡 Exploring **Full Stack Web Development**
+- 🤝 Open to **collaborations & open source**
+- ☕ Coffee + good music = best code sessions
+
+<br clear="right"/>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Mahithagatreddi&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=12" width="48%" />
+&nbsp;
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Mahithagatreddi&theme=tokyonight&hide_border=true&border_radius=12" width="48%" />
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahithagatreddi&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" width="48%" />
+
+</div>
+
+---
+
+## 🏆 Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=Mahithagatreddi&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=6" />
+</div>
+
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahitha-gatreddi-497347378)
+&nbsp;
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Now-a855f7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mahithagatreddi.github.io/Portfolio/)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mahithagatreddi)
+
+</div>
+
+---
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:a855f7,100:7c3aed&height=120&section=footer&animation=fadeIn" />
+
+*Made with ❤️ by **Mahitha Gatreddi*** 🚀
+
+</div>
 
 
 
