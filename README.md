@@ -1,128 +1,134 @@
-<!-- SECTION G: VISITOR COUNTER -->
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=Mahithagatreddi&label=Profile%20Views&color=blueviolet&style=flat-square" alt="Profile Views" />
-</p>
+<div align="center">
 
-<!-- SECTION A: ANIMATED HEADER -->
-<p align="center">
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px" alt="wave" />
-</p>
+<!-- VISITOR COUNTER -->
+<img src="https://komarev.com/ghpvc/?username=Mahithagatreddi&label=✨+Profile+Views&color=blueviolet&style=flat-square" alt="Profile Views" />
+&nbsp;&nbsp;
+<img src="https://img.shields.io/github/followers/Mahithagatreddi?label=Followers&style=flat-square&color=blueviolet" alt="Followers" />
 
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Mahitha+Gatreddi+%F0%9F%91%8B;Student+%7C+Developer+%7C+Creator;Building+cool+things+one+line+at+a+time!" alt="Typing SVG" />
-  </a>
-</p>
+<br/><br/>
+
+<!-- ANIMATED BANNER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:A855F7,100=7C3AED&height=200&section=header&text=Mahitha%20Gatreddi&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Student%20%7C%20Developer%20%7C%20Creator&descAlignY=58&descSize=20&animation=fadeIn" />
+
+<br/>
+
+<!-- TYPING ANIMATION -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=🚀+Aspiring+Developer+%7C+Student;💻+C+%7C+Java+%7C+Python+%7C+Web+Dev;🌱+Learning+Every+Single+Day;✨+Turning+Ideas+into+Reality!" alt="Typing SVG" />
+</a>
+
+</div>
 
 ---
 
-<!-- SECTION B: ABOUT ME -->
+<img align="right" alt="Coding GIF" width="380" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
+
 ## 🙋‍♀️ About Me
 
-Hey there! I'm **Mahitha** — a passionate student, developer-in-the-making, and content creator on a mission to learn, build, and share everything along the way.
+```python
+class Mahitha:
+    name     = "Mahitha Gatreddi"
+    role     = "Student & Aspiring Developer"
+    location = "India 🇮🇳"
+    learning = ["Web Dev", "Python", "Java", "DSA"]
+    goal     = "Build things that matter 🚀"
+    fun_fact = "I debug with console.log and I'm proud 😄"
+```
 
-- 🎓 Currently leveling up my skills in web development & programming
-- 🌟 Turning curiosity into code, one project at a time
-- 🎥 Sharing my journey on **YouTube**, **Medium**, and **Instagram**
-- 🌐 Check out my work at **[mahithagatreddi.github.io/Portfolio](https://mahithagatreddi.github.io/Portfolio/)**
+🎯 **What I'm up to:**
+- 🌱 Currently mastering **Data Structures & Algorithms**
+- 💡 Building projects to grow my portfolio
+- 🌐 Exploring **Full Stack Web Development**
+- 🤝 Open to **collaborations & open source**
+- 💬 Ask me about **Python, Java, or Web Dev**
 
-**A few fun things about me:**
-- 🧩 I love solving problems — bugs are just puzzles in disguise
-- ☕ Best code is written with good music in the background
-- 📚 Lifelong learner who believes documentation is a form of self-love
-- 🚀 Started from zero; the journey IS the destination
+<br clear="right"/>
 
 ---
 
-<!-- SECTION C: TECH STACK -->
 ## 🛠️ Tech Stack
 
-**Frontend**
+<div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+### 🎨 Frontend
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
-**Backend & Languages**
+### ⚙️ Languages
+![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+### 🧰 Tools & Platforms
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Replit](https://img.shields.io/badge/Replit-%23667881.svg?style=for-the-badge&logo=replit&logoColor=white)
 
-**Tools & Platforms**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
----
-
-<!-- SECTION D: SOCIAL MEDIA LINKS -->
-## 🌐 Find Me Online
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/mahitha-gatreddi-497347378" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Mahitha%20Gatreddi-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://mahithagatreddi.github.io/Portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Now-A855F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Mahithagatreddi" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Mahithagatreddi-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
+</div>
 
 ---
 
-<!-- SECTION E: GITHUB STATS -->
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mahithagatreddi&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" />
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mahithagatreddi&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="48%" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahithagatreddi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" width="48%" />
-</p>
+<img src="https://github-readme-stats.vercel.app/api?username=Mahithagatreddi&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&border_radius=12" alt="Mahitha's GitHub Stats" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Mahithagatreddi&theme=tokyonight&hide_border=true&border_radius=12" alt="GitHub Streak" width="49%" />
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahithagatreddi&layout=donut&theme=tokyonight&hide_border=true&border_radius=12&langs_count=8" alt="Top Languages" width="40%" />
+
+</div>
 
 ---
 
-<!-- SECTION F: GITHUB TROPHIES -->
 ## 🏆 GitHub Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mahithagatreddi&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=7" alt="GitHub Trophies" />
-</p>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Mahithagatreddi&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=7&rank=SSS,SS,S,AAA,AA,A,B,C" alt="GitHub Trophies" />
+</div>
 
 ---
 
-<!-- SECTION H: FOOTER -->
-## 🤝 Let's Connect!
+## 📈 Contribution Graph
 
-I'm always open to collaborating on interesting projects, discussing tech, or just having a good conversation. Reach out anytime!
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mahithagatreddi&theme=tokyo-night&hide_border=true&area=true&custom_title=Mahitha's%20Contribution%20Graph" alt="Contribution Graph" width="95%" />
+</div>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/mahitha-gatreddi-497347378" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="https://mahithagatreddi.github.io/Portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Explore-A855F7?style=for-the-badge&logo=googlechrome&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="mailto:mahithagatreddi@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+---
 
-<p align="center">
-  <i>"Every expert was once a beginner. Keep showing up."</i> 🌱
-</p>
+## 🌐 Connect With Me
 
-<p align="center">
-  Made with ❤️ by <b>Mahitha Gatreddi</b>
-</p>
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahitha-gatreddi-497347378)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23A855F7.svg?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mahithagatreddi.github.io/Portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mahithagatreddi)
+
+</div>
+
+---
+
+## 💭 Quote of the Day
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />
+</div>
+
+---
+
+<!-- FOOTER WAVE -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:A855F7,100:7C3AED&height=120&section=footer&animation=fadeIn" />
+
+<div align="center">
+
+**⭐ If you like my work, consider giving my repos a star! It means a lot 😊**
+
+*Made with ❤️ & lots of ☕ by **Mahitha Gatreddi***
+
+</div>
+
